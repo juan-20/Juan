@@ -6,8 +6,12 @@ import {
   Button,
   Icon,
   Link,
+  Spacer,
 } from "@chakra-ui/react";
 import HeroImage from "../components/Hero-image";
+import { AiFillLinkedin } from 'react-icons/ai';
+import { BsGithub, BsInstagram } from 'react-icons/bs';
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const Hero = () => {
   return (
@@ -31,7 +35,7 @@ const Hero = () => {
           </Heading>
         </Stack>
         <Text as="h2" lineHeight="175%">
-          Eu sou um desenvolvedor e trabalho atualmente na Kukac como <strong>tester</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
+          Eu sou um blablablabla <strong>Destaque. </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
         </Text>
         <Stack direction={{ base: "column", md: "row" }} spacing={3}>
           
@@ -39,11 +43,35 @@ const Hero = () => {
               as={Link}
               justifyContent={{ base: "flex-start", md: "center" }}
               px={4}
-              // rightIcon={<Icon as={FiArrowUpRight} />}
+              leftIcon={<Icon as={BsGithub} />}
               target="_blank"
               variant="ghost"
+              bg='gray.300'
             >
-              alos
+              Github
+            </Button>
+            <br/>
+            <Button
+              as={Link}
+              justifyContent={{ base: "flex-start", md: "center" }}
+              px={4}
+              leftIcon={<Icon as={AiFillLinkedin} />}
+              target="_blank"
+              variant="ghost"
+              bg='blue.100'
+            >
+              LinkedIn
+            </Button>
+            <Button
+              as={Link}
+              justifyContent={{ base: "flex-start", md: "center" }}
+              px={4}
+              leftIcon={<Icon as={BsInstagram} />}
+              target="_blank"
+              variant="ghost"
+              bg='pink.100'
+            >
+              Instagram
             </Button>
           
         </Stack>

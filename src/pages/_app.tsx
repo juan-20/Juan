@@ -1,23 +1,25 @@
-import { AppProps } from 'next/app'
-import { ChakraProvider } from '@chakra-ui/react'
-import { extendTheme } from '@chakra-ui/react'
+import { AppProps } from "next/app";
+import { ChakraProvider } from "@chakra-ui/react";
+import { NextSeo } from "next-seo";
 
-const colors = {
-  brand: {
-    900: '#1a365d',
-    800: '#153e75',
-    700: '#2a69ac',
-  },
-}
+// import theme from "../theme/index";
 
-const theme = extendTheme({ colors })
+// import "../style.css";
+import Global from "../../styles/layout/global";
+import Header from "../components/Header";
 
-function MyApp({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <ChakraProvider>
-      <Component {...pageProps} />
+    <ChakraProvider 
+    // theme={theme}
+    >
+      <NextSeo/>
+        <Global>
+          <Header/>
+          <Component {...pageProps} />
+        </Global>
     </ChakraProvider>
-  )
-}
+  );
+};
 
-export default MyApp
+export default App;

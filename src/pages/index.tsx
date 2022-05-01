@@ -1,102 +1,56 @@
-import { ChevronDownIcon, ExternalLinkIcon, HamburgerIcon } from '@chakra-ui/icons'
-import { Box, Text, Center, Container, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Heading, IconButton, Input, Link, Menu, MenuButton, MenuItem, MenuList, Spacer, Switch, useDisclosure, Img, AspectRatio } from '@chakra-ui/react'
-import type { NextPage } from 'next'
-import  me from '../../public/Iconeanimado-Juan.gif'
-import React from 'react'
-import Image from 'next/image'
-import style from '../../styles/main.module.scss'
+import {
+  Stack,
+  VStack,
+  Heading,
+  Text,
+  Button,
+  Icon,
+  Link,
+} from "@chakra-ui/react";
+import HeroImage from "../components/Hero-image";
 
-const Home: NextPage = () => {
-
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const btnRef = React.useRef()
-
+const Hero = () => {
   return (
-    <>
-    <nav>
-      <Container
-      maxW='100%' bg='blue.600' color='white'>
-      <Menu>
-      <Flex>
-        <Center>
-        <Heading size='md'>Juan</Heading>
-        </Center>
-      <Spacer />
-        <MenuButton
-          as={IconButton}
-          aria-label='Options'
-          icon={<HamburgerIcon />}
-          variant='outline'
-          onClick={onOpen}
-        />
-      </Flex>
-        <Drawer
-          isOpen={isOpen}
-          placement='right'
-          onClose={onClose}
-          finalFocusRef={btnRef}
+    <Stack
+      as="section"
+      alignItems="center"
+      direction={{ base: "column-reverse", md: "row" }}
+      w="full"
+      spacing={12}
+    >
+      <VStack alignItems="flex-start" w="full" spacing={3}>
+        <Stack
+          alignItems="center"
+          justifyContent={{ base: "center", md: "flex-start" }}
+          direction={{ base: "column", md: "row" }}
+          w="full"
+          spacing={3}
         >
-          <DrawerOverlay />
-          <DrawerContent>
-            <DrawerCloseButton />
-            <DrawerHeader></DrawerHeader>
+          <Heading as="h1" size="lg">
+            Oi, eu sou o Juan.
+          </Heading>
+        </Stack>
+        <Text as="h2" lineHeight="175%">
+          Eu sou um desenvolvedor e trabalho atualmente na Kukac como <strong>tester</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
+        </Text>
+        <Stack direction={{ base: "column", md: "row" }} spacing={3}>
+          
+            <Button
+              as={Link}
+              justifyContent={{ base: "flex-start", md: "center" }}
+              px={4}
+              // rightIcon={<Icon as={FiArrowUpRight} />}
+              target="_blank"
+              variant="ghost"
+            >
+              alos
+            </Button>
+          
+        </Stack>
+      </VStack>
+      <HeroImage />
+    </Stack>
+  );
+};
 
-            <DrawerBody>
-            <Link>
-            Quem sou
-            </Link>
-            <br/>
-            <Link>
-            Projetos
-            </Link>
-            <br/>
-            <Link>
-            Quem sou
-            </Link>
-            </DrawerBody>
-
-            <DrawerFooter>
-            <Link href='' isExternal>
-              Código-fonte <ExternalLinkIcon mx='2px' />
-            </Link>
-            </DrawerFooter>
-
-          </DrawerContent>
-        </Drawer>
-  
-  </Menu>
-      </Container>
-    </nav>
-    <section className='whoiam'>
-      <Container
-       maxW='100%' size='md'
-       bg='purple.600' color='white'>
-      <Flex minWidth='max-content' alignItems='center' gap='2'>
-        <Box
-        maxW='100%'
-        p='2'>
-          {/* <AspectRatio ratio={4 / 3}> */}
-          <Image className={style.gif}
-           src={me}
-           width={400}
-           height={400}
-           layout='intrinsic'
-           />
-           {/* </AspectRatio> */}
-        </Box>
-        {/* <Spacer /> */}
-        <Box  >
-          <Center>
-            <Center>
-        <Heading size='md'>Quem sou .</Heading>
-        </Center>
-        </Center>
-        </Box>
-      </Flex>
-      </Container>
-    </section>
-    </>
-  )
-}
-
-export default Home
+export default Hero;

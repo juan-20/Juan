@@ -35,7 +35,6 @@ const HeroText: React.FC = () => {
         >
           Github
         </Button>
-        <br/>
         <Button
           as={Link}
           justifyContent={{ base: 'flex-start', md: 'center' }}

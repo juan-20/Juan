@@ -38,4 +38,8 @@ export default createGlobalStyle<{theme: ThemeType}>`
     .SocialBtn{
         color: #333;
     }
+
+    .slick-slider{
+        /* width: 5rem; */
+    }
 `;

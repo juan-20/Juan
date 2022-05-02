@@ -16,6 +16,7 @@ import { SiFirebase } from "react-icons/si";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import Image from 'next/image'
 import spotify from '../../assets/projects/spotify.gif'
+import Carousel from "../Carousel";
 
 function Projects() {
   return (
@@ -60,6 +61,7 @@ function Projects() {
                       height={400}
                       layout='intrinsic'
                   />
+                  <Carousel/>
 
               </VStack>
 

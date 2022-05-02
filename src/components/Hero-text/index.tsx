@@ -5,32 +5,32 @@ import { BsGithub, BsInstagram } from 'react-icons/bs';
 
 const HeroText: React.FC = () => {
   return (
-    <VStack alignItems="flex-start" w="full" spacing={3}>
+    <VStack alignItems='flex-start' w='full' spacing={3}>
     <Stack
-      alignItems="center"
-      justifyContent={{ base: "center", md: "flex-start" }}
-      direction={{ base: "column", md: "row" }}
-      w="full"
+      alignItems='center'
+      justifyContent={{ base: 'center', md: 'flex-start' }}
+      direction={{ base: 'column', md: 'row' }}
+      w='full'
       spacing={3}
     >
-      <Heading as="h1" size="lg">
+      <Heading as='h1' size='lg'>
         Oi, eu sou o Juan.
       </Heading>
     </Stack>
-    <Text as="h2" lineHeight="175%">
-      Eu sou um blablablabla <strong>Destaque. </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
+    <Text as='h2' lineHeight='175%'>
+      Eu sou um blablablabla <strong>Destaque. </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' 
     </Text>
     <Stack
     className='Social-btn'
-    direction={{ base: "column", md: "row" }} spacing={3}>
+    direction={{ base: 'column', md: 'row' }} spacing={3}>
       
         <Button
           as={Link}
-          justifyContent={{ base: "flex-start", md: "center" }}
+          justifyContent={{ base: 'flex-start', md: 'center' }}
           px={4}
           leftIcon={<Icon as={BsGithub} />}
-          target="_blank"
-          variant="ghost"
+          target='_blank'
+          variant='ghost'
           bg='gray.300'
         >
           Github
@@ -38,22 +38,22 @@ const HeroText: React.FC = () => {
         <br/>
         <Button
           as={Link}
-          justifyContent={{ base: "flex-start", md: "center" }}
+          justifyContent={{ base: 'flex-start', md: 'center' }}
           px={4}
           leftIcon={<Icon as={AiFillLinkedin} />}
-          target="_blank"
-          variant="ghost"
+          target='_blank'
+          variant='ghost'
           bg='blue.100'
         >
           LinkedIn
         </Button>
         <Button
           as={Link}
-          justifyContent={{ base: "flex-start", md: "center" }}
+          justifyContent={{ base: 'flex-start', md: 'center' }}
           px={4}
           leftIcon={<Icon as={BsInstagram} />}
-          target="_blank"
-          variant="ghost"
+          target='_blank'
+          variant='ghost'
           bg='pink.100'
         >
           Instagram

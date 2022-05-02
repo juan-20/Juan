@@ -32,7 +32,8 @@ const HeroText: React.FC = () => {
           target='_blank'
           variant='ghost'
           bg='gray.300'
-        >
+          className='SocialBtn'
+          >
           Github
         </Button>
         <Button
@@ -43,7 +44,8 @@ const HeroText: React.FC = () => {
           target='_blank'
           variant='ghost'
           bg='blue.100'
-        >
+          className='SocialBtn'
+          >
           LinkedIn
         </Button>
         <Button
@@ -54,6 +56,7 @@ const HeroText: React.FC = () => {
           target='_blank'
           variant='ghost'
           bg='pink.100'
+          className='SocialBtn'
         >
           Instagram
         </Button>

@@ -34,4 +34,8 @@ export default createGlobalStyle<{theme: ThemeType}>`
     nav{
         width: 100%;
     }
+
+    .SocialBtn{
+        color: #333;
+    }
 `;

@@ -1,25 +1,27 @@
 import { ChevronDownIcon, ExternalLinkIcon, HamburgerIcon } from '@chakra-ui/icons'
 import { Box, Text, Center, Container, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Heading, IconButton, Input, Link, Menu, MenuButton, MenuItem, MenuList, Spacer, Switch, useDisclosure, Img, AspectRatio } from '@chakra-ui/react'
 import type { NextPage } from 'next'
-// import  me from '../../public/Iconeanimado-Juan.gif'
-import React from 'react'
-import Image from 'next/image'
-import style from '../../styles/main.module.scss'
+import { title } from 'process';
+import React, { useContext } from 'react'
+import { ThemeContext } from 'styled-components';
 
-const Header: NextPage = () => {
+interface props {
+  toggleTheme(): void;
+}
+
+
+const Header: NextPage<props> = ({ toggleTheme }) => {
 
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef()
   
-  const navStyle = {
-    width: '100%',
-  }
+  const { colors, title } = useContext(ThemeContext)
 
   return (
     <>
-    <nav style={ navStyle }>
+    <nav >
       <Container
-      maxW='100%' bg='yellow.400' color='white'>
+      maxW='100%' color='white'>
       <Menu>
       <Flex>
         <Center>
@@ -32,6 +34,10 @@ const Header: NextPage = () => {
           icon={<HamburgerIcon />}
           variant='outline'
           onClick={onOpen}
+          transition='all 0.2s'
+          _focus={{ boxShadow: 'outline' }}
+          colorScheme='yellow'
+          _hover={{ bg: 'gray.900', color: '#FBB642' }}
         />
       </Flex>
         <Drawer
@@ -60,6 +66,11 @@ const Header: NextPage = () => {
             </DrawerBody>
 
             <DrawerFooter>
+            <Switch 
+            size='lg' 
+            onChange={toggleTheme} checked={title === 'dark'}
+            bg={colors.secondary}
+             />
             <Link href='' isExternal>
               Código-fonte <ExternalLinkIcon mx='2px' />
             </Link>

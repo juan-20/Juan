@@ -3,8 +3,6 @@ import React from 'react';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { BsGithub, BsInstagram } from 'react-icons/bs';
 
-// import { Container } from './styles';
-
 const HeroText: React.FC = () => {
   return (
     <VStack alignItems="flex-start" w="full" spacing={3}>
@@ -22,7 +20,9 @@ const HeroText: React.FC = () => {
     <Text as="h2" lineHeight="175%">
       Eu sou um blablablabla <strong>Destaque. </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
     </Text>
-    <Stack direction={{ base: "column", md: "row" }} spacing={3}>
+    <Stack
+    className='Social-btn'
+    direction={{ base: "column", md: "row" }} spacing={3}>
       
         <Button
           as={Link}

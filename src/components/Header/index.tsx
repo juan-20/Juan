@@ -1,5 +1,5 @@
 import { ChevronDownIcon, ExternalLinkIcon, HamburgerIcon } from '@chakra-ui/icons'
-import { Box, Text, Center, Container, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Heading, IconButton, Input, Link, Menu, MenuButton, MenuItem, MenuList, Spacer, Switch, useDisclosure, Img, AspectRatio } from '@chakra-ui/react'
+import { Box, Text, Center, Container, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Heading, IconButton, Input, Link, Menu, MenuButton, MenuItem, MenuList, Spacer, Switch, useDisclosure, Img, AspectRatio, ButtonGroup } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import { title } from 'process';
 import React, { useContext } from 'react'
@@ -44,7 +44,6 @@ const Header: NextPage<props> = ({ toggleTheme }) => {
           isOpen={isOpen}
           placement='right'
           onClose={onClose}
-          finalFocusRef={btnRef}
         >
           <DrawerOverlay />
           <DrawerContent>
@@ -66,14 +65,24 @@ const Header: NextPage<props> = ({ toggleTheme }) => {
             </DrawerBody>
 
             <DrawerFooter>
-            <Switch 
-            size='lg' 
-            onChange={toggleTheme} checked={title === 'dark'}
-            bg={colors.secondary}
-             />
-            <Link href='' isExternal>
-              Código-fonte <ExternalLinkIcon mx='2px' />
-            </Link>
+            <Flex minWidth='max-content' alignItems='center' gap='2'>
+                <Box p='2'>
+                  <Center>
+                  <p>Mudar o tema:</p>
+                <Switch 
+                size='md' 
+                onChange={toggleTheme} checked={title === 'dark'}
+                />
+                </Center>
+                </Box>
+
+                <Spacer />
+                <ButtonGroup gap='2'>
+                <Link href='https://github.com/juan-20/Juan' isExternal>
+                  Código-fonte <ExternalLinkIcon mx='2px' />
+                </Link>
+                </ButtonGroup>
+            </Flex>
             </DrawerFooter>
 
           </DrawerContent>

@@ -42,8 +42,8 @@ export default function Carousel({Firstimage, secondImage}: ImageProps) {
   return (
     <Box
       position={'relative'}
-      height={'600px'}
-      width={'400px'}
+      height='600px'
+      width='400px'
       overflow={'hidden'}
       >
       {/* CSS files for react-slick */}
@@ -88,6 +88,7 @@ export default function Carousel({Firstimage, secondImage}: ImageProps) {
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((url, index) => (
           <Box
+          className='ImageCarousel'
             key={index}
             height={'6xl'}
             position="relative"
@@ -95,8 +96,6 @@ export default function Carousel({Firstimage, secondImage}: ImageProps) {
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             backgroundImage={`url(${url})`}
-            height={'600px'}
-            width={'400px'}
           />
         ))}
       </Slider>

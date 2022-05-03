@@ -39,7 +39,8 @@ export default createGlobalStyle<{theme: ThemeType}>`
         color: #333;
     }
 
-    .slick-slider{
-        /* width: 5rem; */
+    .ImageCarousel{
+        height: 600px;
+        width: 400px
     }
 `;

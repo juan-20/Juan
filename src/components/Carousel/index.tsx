@@ -18,7 +18,12 @@ const settings = {
   slidesToScroll: 1,
 };
 
-export default function Carousel() {
+interface ImageProps {
+  Firstimage: string,
+  secondImage: string
+}
+
+export default function Carousel({Firstimage, secondImage}: ImageProps) {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = React.useState<Slider | null>(null);
@@ -30,14 +35,15 @@ export default function Carousel() {
 
   // These are the images used in the slide
   const cards = [
-    'https://camo.githubusercontent.com/e9764a7a076e76b230adbdbdbb59fb312bb4c40438b9ab90f121ec3957af7aac/68747470733a2f2f6d65646961322e67697068792e636f6d2f6d656469612f31526c396572523534427153666f6158306d2f67697068792e6769663f6369643d373930623736313161643536336638323939316364663339393335336562313034326664353030393161393335373132267269643d67697068792e6769662663743d67',
+    Firstimage,
+    secondImage
   ];
 
   return (
     <Box
       position={'relative'}
       height={'600px'}
-      width={'30rem'}
+      width={'400px'}
       overflow={'hidden'}
       >
       {/* CSS files for react-slick */}
@@ -89,6 +95,8 @@ export default function Carousel() {
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             backgroundImage={`url(${url})`}
+            height={'600px'}
+            width={'400px'}
           />
         ))}
       </Slider>

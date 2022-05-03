@@ -39,8 +39,17 @@ export default createGlobalStyle<{theme: ThemeType}>`
         color: #333;
     }
 
+    #mobile{
+    height: 667px;
+    width:  375px;
+    }
+    #tablet{
+    height: 600px;
+    width:  700px;
+    }
+
     .ImageCarousel{
-        height: 600px;
-        width: 400px
+        height: 667px;
+    width:  375px;
     }
 `;

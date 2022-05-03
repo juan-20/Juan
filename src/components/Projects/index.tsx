@@ -131,10 +131,10 @@ function Projects() {
                       Após concluir o cadastro é exibido ao usuario, outros usuarios onde ele pode escolher dar um match ou não.
                       Ao dar um Match aparece uma tela convidando para os dois conversarem, que envia a uma tela de chat onde os dois podem conversar em tempo real.</Text>
 
-                        {/* <Carousel
-                        Firstimage='https://camo.githubusercontent.com/e9764a7a076e76b230adbdbdbb59fb312bb4c40438b9ab90f121ec3957af7aac/68747470733a2f2f6d65646961322e67697068792e636f6d2f6d656469612f31526c396572523534427153666f6158306d2f67697068792e6769663f6369643d373930623736313161643536336638323939316364663339393335336562313034326664353030393161393335373132267269643d67697068792e6769662663743d67'
-                        secondImage='https://camo.githubusercontent.com/3981fc1a827a68680c02aeb0da938f9bcb634f640dfd12198b432917b70d85f2/68747470733a2f2f6d65646961322e67697068792e636f6d2f6d656469612f754b655a32424d6e5375456964704336326c2f67697068792e676966'
-                        /> */}
+                        <Carousel
+                        Firstimage='https://github.com/juan-20/Juan/blob/main/src/assets/projects/rinder_login.gif?raw=true'
+                        secondImage='https://github.com/juan-20/Juan/blob/main/src/assets/projects/tinder_match.gif?raw=true'
+                        />
 
                     </VStack>
 
@@ -206,11 +206,12 @@ function Projects() {
                       <Text w="full">Aplicação com o design do Twitter em que dependendo da tela o design é alterado. 
                       Existe a tela para mobile, para tablet e telas maiores, garantindo uma responsividade em todos dispositivos</Text>
 
-                        {/* <Carousel
-                        Firstimage='https://camo.githubusercontent.com/e9764a7a076e76b230adbdbdbb59fb312bb4c40438b9ab90f121ec3957af7aac/68747470733a2f2f6d65646961322e67697068792e636f6d2f6d656469612f31526c396572523534427153666f6158306d2f67697068792e6769663f6369643d373930623736313161643536336638323939316364663339393335336562313034326664353030393161393335373132267269643d67697068792e6769662663743d67'
-                        secondImage='https://camo.githubusercontent.com/3981fc1a827a68680c02aeb0da938f9bcb634f640dfd12198b432917b70d85f2/68747470733a2f2f6d65646961322e67697068792e636f6d2f6d656469612f754b655a32424d6e5375456964704336326c2f67697068792e676966'
-                        /> */}
-
+                        <iframe id="mobile"
+                        src="https://twitter-ui-clone-2g4yvlm7p-juan-20.vercel.app"
+                        />
+                        <iframe id="tablet"
+                        src="https://twitter-ui-clone-2g4yvlm7p-juan-20.vercel.app"
+                        />
                     </VStack>
 
                     <Flex justifyContent="space-between">
@@ -257,7 +258,7 @@ function Projects() {
                     </Flex>
                   </Flex>
                   <Divider/>
-                  {/* Ig.News */}
+                  {/* Letmeask */}
                   <Flex
               boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"
               justifyContent="space-between"
@@ -287,10 +288,9 @@ function Projects() {
 
                 </Text>
 
-                  {/* <Carousel
-                  Firstimage='https://camo.githubusercontent.com/e9764a7a076e76b230adbdbdbb59fb312bb4c40438b9ab90f121ec3957af7aac/68747470733a2f2f6d65646961322e67697068792e636f6d2f6d656469612f31526c396572523534427153666f6158306d2f67697068792e6769663f6369643d373930623736313161643536336638323939316364663339393335336562313034326664353030393161393335373132267269643d67697068792e6769662663743d67'
-                  secondImage='https://camo.githubusercontent.com/3981fc1a827a68680c02aeb0da938f9bcb634f640dfd12198b432917b70d85f2/68747470733a2f2f6d65646961322e67697068792e636f6d2f6d656469612f754b655a32424d6e5375456964704336326c2f67697068792e676966'
-                  /> */}
+                   <iframe id="tablet"
+                    src="https://letmeask-ebon.vercel.app"
+                    />
 
               </VStack>
 

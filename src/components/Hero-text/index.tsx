@@ -18,7 +18,10 @@ const HeroText: React.FC = () => {
       </Heading>
     </Stack>
     <Text as='h2' lineHeight='175%'>
-      Eu sou um blablablabla <strong>Destaque. </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est. 
+      Moro em Minas Gerais e estudo programação. Fiz curso técnico na <strong>Cotemig </strong>em desenvolvimento web/mobile.
+      Trabalho na <strong>Kukac </strong> desde 2020.
+      <br/>
+      Atualmente estou estudando Next.js e React Native ✏️
     </Text>
     <Stack
     className='Social-btn'

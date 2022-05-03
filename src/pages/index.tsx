@@ -1,9 +1,11 @@
 import {
+  Divider,
   Stack,
 } from '@chakra-ui/react';
 import Projects from '../components/Projects';
 import HeroImage from '../components/Hero-image';
 import HeroText from '../components/Hero-text';
+import Footer from '../components/Footer';
 
 const Hero = () => {
   return (
@@ -20,8 +22,10 @@ const Hero = () => {
           <HeroText/>
           <HeroImage />
       </Stack>
+          <Divider />
+          <Projects/>
 
-      <Projects/>
+          <Footer/>
     </Stack>
   );
 };

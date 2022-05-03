@@ -51,17 +51,7 @@ const Header: NextPage<props> = ({ toggleTheme }) => {
             <DrawerHeader></DrawerHeader>
 
             <DrawerBody>
-            <Link>
-            Quem sou
-            </Link>
-            <br/>
-            <Link>
-            Projetos
-            </Link>
-            <br/>
-            <Link>
-            Quem sou
-            </Link>
+            
             </DrawerBody>
 
             <DrawerFooter>

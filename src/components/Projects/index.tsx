@@ -158,14 +158,14 @@ function Projects() {
                         colorScheme='yellow'
                         photo={<TagRightIcon as={SiFirebase} />}
                         />
-                        <CustomToolTip
+                        {/* <CustomToolTip
                         key='Tailwind'
                         title="Tailwind"
                         details="Um framework CSSque deixa amis facil a declaração das classes"
                         color='blue.600'
                         colorScheme='purple'
                         photo={<TagRightIcon as={SiTailwindcss} />}
-                        />
+                        /> */}
                       
                       </HStack>
                       <Link isExternal  href='https://github.com/juan-20/Tinder-clone'
@@ -214,7 +214,7 @@ function Projects() {
                     </VStack>
 
                     <Flex justifyContent="space-between">
-                      <HStack spacing={2}>
+                      <HStack spacing={1}>
 
                         <CustomToolTip
                         key='React'
@@ -226,7 +226,7 @@ function Projects() {
                         />
                         <CustomToolTip
                         key='Styled Components'
-                        title="Styled Components"
+                        title="Styled-Components"
                         details="Usado na estilização por componentes"
                         color='pink.300'
                         colorScheme='purple'

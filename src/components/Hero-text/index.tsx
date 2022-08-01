@@ -33,18 +33,16 @@ const HeroText: React.FC = () => {
     </Stack>
 
     <Stack
-    width='100%'
-    justifyContent='center'
+    display='flex'
     alignItems='center'
-    className='Social-btn'
+    justifyContent='center'
+    width='100%'
     direction={{ base: 'column', md: 'row' }} spacing={3}>
       
         <Button
           as={Link}
-          justifyContent={{ base: 'flex-start', md: 'center' }}
           px={4}
           leftIcon={<Icon as={BsGithub} />}
-          target='_blank'
           colorScheme='gray'
           width='30%'
           >
@@ -52,7 +50,6 @@ const HeroText: React.FC = () => {
         </Button>
         <Button
           as={Link}
-          justifyContent={{ base: 'flex-start', md: 'center' }}
           px={4}
           leftIcon={<Icon as={AiFillLinkedin} />}
           target='_blank'
@@ -63,7 +60,6 @@ const HeroText: React.FC = () => {
         </Button>
         <Button
           as={Link}
-          justifyContent={{ base: 'flex-start', md: 'center' }}
           px={4}
           leftIcon={<Icon as={BsInstagram} />}
           target='_blank'

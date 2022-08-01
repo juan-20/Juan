@@ -37,7 +37,6 @@ const Header: NextPage<props> = ({ toggleTheme }) => {
           transition='all 0.2s'
           _focus={{ boxShadow: 'outline' }}
           colorScheme='yellow'
-          _hover={{ bg: 'gray.900', color: '#FBB642' }}
         />
       </Flex>
         <Drawer

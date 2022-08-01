@@ -11,7 +11,8 @@ import {
   TagRightIcon,
   Center,
   Link,
-  Divider
+  Divider,
+  Box
 } from "@chakra-ui/react";
 import { FaDatabase, FaNodeJs, FaReact } from "react-icons/fa";
 import CustomToolTip from "../Tag";
@@ -205,13 +206,11 @@ function Projects() {
                       </Heading>
                       <Text w="full">Aplicação com o design do Twitter em que dependendo da tela o design é alterado. 
                       Existe a tela para mobile, para tablet e telas maiores, garantindo uma responsividade em todos dispositivos</Text>
+                        
 
-                        <iframe id="mobile"
+                        {/* <iframe id="mobile" 
                         src="https://twitter-ui-clone-2g4yvlm7p-juan-20.vercel.app"
-                        />
-                        <iframe id="tablet"
-                        src="https://twitter-ui-clone-2g4yvlm7p-juan-20.vercel.app"
-                        />
+                        /> */}
                     </VStack>
 
                     <Flex justifyContent="space-between">
@@ -232,14 +231,6 @@ function Projects() {
                         color='pink.300'
                         colorScheme='purple'
                         photo={<TagRightIcon as={SiStyledcomponents} />}
-                        />
-                        <CustomToolTip
-                        key='Typescript'
-                        title="Typescript"
-                        details="Infraestrutura de pagamentos para internet"
-                        color='blue.300'
-                        colorScheme='blue'
-                        photo={<TagRightIcon as={SiTypescript} />}
                         />
                       
                       </HStack>
@@ -288,9 +279,9 @@ function Projects() {
 
                 </Text>
 
-                   <iframe id="tablet"
+                   {/* <iframe id="tablet"
                     src="https://letmeask-ebon.vercel.app"
-                    />
+                    /> */}
 
               </VStack>
 

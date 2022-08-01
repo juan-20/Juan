@@ -42,8 +42,8 @@ export default function Carousel({Firstimage, secondImage}: ImageProps) {
   return (
     <Box
       position={'relative'}
-      height='600px'
-      width='400px'
+      height={{ base: '0px', md: '800px' }}
+      width={{ base: '0px', md: '500px' }}
       overflow={'hidden'}
       >
       {/* CSS files for react-slick */}

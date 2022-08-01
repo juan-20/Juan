@@ -16,7 +16,6 @@ const Hero = () => {
         as='section'
         alignItems='center'
         direction={{ base: 'column-reverse', md: 'row' }}
-        w='full'
         spacing={12}
       >
           <HeroText/>

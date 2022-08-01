@@ -50,24 +50,24 @@ const Header: NextPage<props> = ({ toggleTheme }) => {
             <DrawerHeader></DrawerHeader>
 
             <DrawerBody>
-            
-            </DrawerBody>
-
-            <DrawerFooter>
-            <Flex minWidth='max-content' alignItems='center' gap='2'>
-                <Box p='2'>
-                  <Center>
+            <Box p='2'>
+                
                   <p>Mudar o tema:</p>
                 <Switch 
                 size='md' 
                 onChange={toggleTheme} checked={title === 'dark'}
                 />
-                </Center>
+                
                 </Box>
+            </DrawerBody>
+
+            <DrawerFooter>
+            <Flex minWidth='max-content' alignItems='center' gap='2'>
+               
 
                 <Spacer />
                 <ButtonGroup gap='2'>
-                <Link href='https://github.com/juan-20/Juan' isExternal>
+                <Link className='link' href='https://github.com/juan-20/Juan' isExternal>
                   Código-fonte <ExternalLinkIcon mx='2px' />
                 </Link>
                 </ButtonGroup>

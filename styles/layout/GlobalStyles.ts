@@ -16,7 +16,7 @@ export default createGlobalStyle<{theme: ThemeType}>`
     background: ${props => props.theme.colors.background}; 
     }
     
-    h1,h2, p, .chakra-link {
+    h1,h2, p, .link {
         color: ${props => props.theme.colors.text}; 
     }
     

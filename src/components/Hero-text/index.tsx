@@ -5,7 +5,7 @@ import { BsGithub, BsInstagram } from 'react-icons/bs';
 
 const HeroText: React.FC = () => {
   return (
-    <VStack alignItems='flex-start' w='full' spacing={3} p={2}>
+    <VStack alignItems='flex-start' spacing={3} p={2}>
     <Stack
       alignItems='center'
       justifyContent={{ base: 'center', md: 'flex-start' }}
@@ -17,12 +17,20 @@ const HeroText: React.FC = () => {
         Oi, eu sou o Juan.
       </Heading>
     </Stack>
+    <Stack
+    display='flex'
+      alignItems='center'
+      justifyContent='center'
+      spacing={3}
+      p='1rem'
+    >
     <Text fontSize='md' as='h2' lineHeight='175%'>
       Moro em Minas Gerais e estudo programação. Fiz curso técnico na <strong>Cotemig </strong>em desenvolvimento web/mobile.
       Trabalho na <strong>Kukac </strong> desde 2020.
       <br/>
       Atualmente estou estudando Next.js e React Native ✏️
     </Text>
+    </Stack>
 
     <Stack
     width='100%'
@@ -38,7 +46,7 @@ const HeroText: React.FC = () => {
           leftIcon={<Icon as={BsGithub} />}
           target='_blank'
           colorScheme='gray'
-          width='25%'
+          width='30%'
           >
           Github
         </Button>
@@ -49,7 +57,7 @@ const HeroText: React.FC = () => {
           leftIcon={<Icon as={AiFillLinkedin} />}
           target='_blank'
           colorScheme='linkedin'
-          width='25%'
+          width='30%'
           >
           LinkedIn
         </Button>
@@ -60,7 +68,7 @@ const HeroText: React.FC = () => {
           leftIcon={<Icon as={BsInstagram} />}
           target='_blank'
           colorScheme='pink'
-          width='25%'
+          width='30%'
         >
           Instagram
         </Button>

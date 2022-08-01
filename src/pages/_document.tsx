@@ -7,6 +7,9 @@ export default class MyDocument extends Document {
             <Html lang='pt'>
                 <Head>
                     <title>Juan</title>
+                    {/* analytics */}
+                    <script defer data-domain="juancho.vercel.app" src="https://plausible.io/js/plausible.js"></script>
+
 
                     <meta name='description' content='Portifolio de Juan' />
                     <meta property='og:title' content='Juan' />

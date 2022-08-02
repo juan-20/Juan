@@ -25,10 +25,9 @@ const HeroText: React.FC = () => {
       p='1rem'
     >
     <Text fontSize='md' as='h2' lineHeight='175%'>
-      Moro em Minas Gerais e estudo programação. Fiz curso técnico na <strong>Cotemig </strong>em desenvolvimento web/mobile.
-      Trabalho na <strong>Kukac </strong> desde 2020.
+      Moro em Minas Gerais, tenho 19 anos e estudo programação. Fiz curso técnico na <strong>Cotemig </strong>em desenvolvimento web/mobile.
+      Trabalho na <strong>Kukac </strong> desde 2020 como Desenvolvimento Front-End e Tester. ✏️
       <br/>
-      Atualmente estou estudando Next.js e React Native ✏️
     </Text>
     </Stack>
 

@@ -126,7 +126,7 @@ function Projects() {
                       Após concluir o cadastro é exibido ao usuario, outros usuarios onde ele pode escolher dar um match ou não.
                       Ao dar um Match aparece uma tela convidando para os dois conversarem, que envia a uma tela de chat onde os dois podem conversar em tempo real.</Text>
 
-                      <Image src={"https://github.com/juan-20/Juan/blob/main/src/assets/projects/tinder.gif?raw=true"} width='1920' height='1080' />
+                      <img src={"https://github.com/juan-20/Juan/blob/main/src/assets/projects/tinder.gif?raw=true"} width='1920' height='1080' />
 
                     </VStack>
 

@@ -6,7 +6,6 @@ export default class MyDocument extends Document {
         return (
             <Html lang='pt'>
                 <Head>
-                    <title>Juan</title>
                     {/* analytics */}
                     <script defer data-domain="juancho.vercel.app" src="https://plausible.io/js/plausible.js"></script>
 

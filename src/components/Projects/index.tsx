@@ -14,14 +14,11 @@ import {
   Divider,
   Box
 } from "@chakra-ui/react";
-import { FaDatabase, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaNodeJs, FaReact } from "react-icons/fa";
 import CustomToolTip from "../Tag";
-import { SiFirebase, SiNextdotjs, SiStripe, SiStyledcomponents, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiFirebase, SiStyledcomponents } from "react-icons/si";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import Image from 'next/image'
-import spotify from '../../assets/projects/spotify.gif'
-import Carousel from "../Carousel";
-import { BsFillGearFill } from "react-icons/bs";
 
 function Projects() {
   return (
@@ -30,12 +27,12 @@ function Projects() {
         py={8}
         px={0}
         maxW={{
-          // base: "100%",
-          // sm: "25rem",
-          // md: "43.75rem",
-          // lg: "57.5rem",
-          // xl: "75rem",
-          // xxl: "87.5rem"
+          base: "100%",
+          sm: "25rem",
+          md: "43.75rem",
+          lg: "57.5rem",
+          xl: "75rem",
+          xxl: "87.5rem"
         }}
       >
                   {/* Spotify: */}
@@ -57,16 +54,13 @@ function Projects() {
                         w="full"
                         mb={2}
                       >
-                        Spotify Clone
+                        Airbnb-Clone
                       </Heading>
                       <Text w="full">App que ultiliza a API do Spotify. O usuario ao clicar em login ultiliza sua conta Spotify onde
                       é possível pesquisar por músicas e as reproduzir.
                       </Text>
 
-                        <Carousel
-                        Firstimage='https://camo.githubusercontent.com/e9764a7a076e76b230adbdbdbb59fb312bb4c40438b9ab90f121ec3957af7aac/68747470733a2f2f6d65646961322e67697068792e636f6d2f6d656469612f31526c396572523534427153666f6158306d2f67697068792e6769663f6369643d373930623736313161643536336638323939316364663339393335336562313034326664353030393161393335373132267269643d67697068792e6769662663743d67'
-                        secondImage='https://camo.githubusercontent.com/3981fc1a827a68680c02aeb0da938f9bcb634f640dfd12198b432917b70d85f2/68747470733a2f2f6d65646961322e67697068792e636f6d2f6d656469612f754b655a32424d6e5375456964704336326c2f67697068792e676966'
-                        />
+                       <Image src={"https://github.com/juan-20/Juan/blob/main/src/assets/projects/airbnb.png?raw=true"} width='1920' height='1080' />
 
                     </VStack>
 
@@ -96,7 +90,6 @@ function Projects() {
                         <Button
                           colorScheme="green"
                           fontWeight="bold"
-                          color="gray.900"
                           size="sm"
                         >
                           Código-fonte 
@@ -106,6 +99,7 @@ function Projects() {
                     </Flex>
                   </Flex>
                   <Divider/>
+
                   {/* Tinder */}
                   <Flex
                     boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"
@@ -132,10 +126,7 @@ function Projects() {
                       Após concluir o cadastro é exibido ao usuario, outros usuarios onde ele pode escolher dar um match ou não.
                       Ao dar um Match aparece uma tela convidando para os dois conversarem, que envia a uma tela de chat onde os dois podem conversar em tempo real.</Text>
 
-                        <Carousel
-                        Firstimage='https://github.com/juan-20/Juan/blob/main/src/assets/projects/rinder_login.gif?raw=true'
-                        secondImage='https://github.com/juan-20/Juan/blob/main/src/assets/projects/tinder_match.gif?raw=true'
-                        />
+                      <Image src={"https://github.com/juan-20/Juan/blob/main/src/assets/projects/tinder.gif?raw=true"} width='1920' height='1080' />
 
                     </VStack>
 
@@ -183,6 +174,7 @@ function Projects() {
                     </Flex>
                   </Flex>
                   <Divider/>
+
                   {/* Twitter UI */}
                   <Flex
                     boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"
@@ -208,9 +200,10 @@ function Projects() {
                       Existe a tela para mobile, para tablet e telas maiores, garantindo uma responsividade em todos dispositivos</Text>
                         
 
-                        {/* <iframe id="mobile" 
-                        src="https://twitter-ui-clone-2g4yvlm7p-juan-20.vercel.app"
-                        /> */}
+                        <Image src={"https://github.com/juan-20/Juan/blob/main/src/assets/projects/twitter.png?raw=true"} width='1920' height='1080' />
+                      
+
+
                     </VStack>
 
                     <Flex justifyContent="space-between">
@@ -247,78 +240,6 @@ function Projects() {
                         </Button>
                         </Link>
                     </Flex>
-                  </Flex>
-                  <Divider/>
-                  {/* Letmeask */}
-                  <Flex
-              boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"
-              justifyContent="space-between"
-              flexDirection="column"
-              overflow="hidden"
-              color="gray.300"
-              bg="base.d100"
-              rounded={5}
-              flex={1}
-              p={5}
-            >
-              <VStack mb={6}>
-                <Heading
-                  fontSize={{ base: "xl", md: "2xl" }}
-                  textAlign="left"
-                  w="full"
-                  mb={2}
-                >
-                  Letmeask
-                </Heading>
-            
-                <Text w="full">Aplicação feita durante uma NLW da Rocketseat. Nela ao fazer o login pelo Google
-                você pode criar uma nova sala para fazer alguma pergunta ou copiar o link de alguma já criada.
-                Você pode postar uma pergunta, compartilhar a sala da sua duvida e receber respostas que
-                podem ser avaliadas por um botão de curtir.
-
-
-                </Text>
-
-                   {/* <iframe id="tablet"
-                    src="https://letmeask-ebon.vercel.app"
-                    /> */}
-
-              </VStack>
-
-              <Flex justifyContent="space-between">
-                <HStack spacing={2}>
-
-                  <CustomToolTip
-                  key='Next'
-                  title="Next"
-                  details="Um framework React com melhor expêriencia para produção."
-                  color='gray.800'
-                  colorScheme='black'
-                  photo={<TagRightIcon as={SiNextdotjs} />}
-                  />
-                    <CustomToolTip
-                  key='Firebase'
-                  title="Firebase"
-                  details="Usado na autenticação de usuarios e usado um sercidor NoSQL em tempo real"
-                  color='yellow.600'
-                  colorScheme='yellow'
-                  photo={<TagRightIcon as={SiFirebase} />}
-                  />
-                
-                </HStack>
-                <Link  isExternal  href='https://github.com/juan-20/letmeask'
-                >
-                  <Button
-                    colorScheme="green"
-                    fontWeight="bold"
-                    color="gray.900"
-                    size="sm"
-                  >
-                    Código-fonte 
-                    <ExternalLinkIcon mx='2px' />
-                  </Button>
-                  </Link>
-              </Flex>
                   </Flex>
 
       </Container>

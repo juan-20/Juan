@@ -39,6 +39,8 @@ const HeroText: React.FC = () => {
     direction={{ base: 'column', md: 'row' }} spacing={3}>
       
         <Button
+          target='_blank'
+          href='https://github.com/juan-20'
           as={Link}
           px={4}
           leftIcon={<Icon as={BsGithub} />}
@@ -49,6 +51,7 @@ const HeroText: React.FC = () => {
         </Button>
         <Button
           as={Link}
+          href='https://www.linkedin.com/in/juan-andrade-811017190/'
           px={4}
           leftIcon={<Icon as={AiFillLinkedin} />}
           target='_blank'
@@ -58,6 +61,7 @@ const HeroText: React.FC = () => {
           LinkedIn
         </Button>
         <Button
+          href='https://www.instagram.com/juann.jpg/'
           as={Link}
           px={4}
           leftIcon={<Icon as={BsInstagram} />}

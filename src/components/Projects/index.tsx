@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import CustomToolTip from "../Tag";
-import { SiFirebase, SiStyledcomponents } from "react-icons/si";
+import { SiFirebase, SiNextdotjs, SiStyledcomponents, SiTailwindcss } from "react-icons/si";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import Image from 'next/image'
 
@@ -68,24 +68,24 @@ function Projects() {
                       <HStack spacing={2}>
 
                         <CustomToolTip
-                        key='React'
-                        title="React"
-                        details="Biblioteca front-end de criação de telas reativas"
-                        color='blue.300'
-                        colorScheme='teal'
-                        photo={<TagRightIcon as={FaReact} />}
+                        key='Next'
+                        title="Next"
+                        details="Framework front-end que possibilita um melhor SEO e páginas mais dinâmicas"
+                        color='gray.900'
+                        colorScheme='white'
+                        photo={<TagRightIcon as={SiNextdotjs} />}
                         />
                         <CustomToolTip
-                        key='Node'
-                        title="Node"
-                        details="Cria um servidor para realizar requisições"
-                        color='green.500'
+                        key='Tailwind'
+                        title="Tailwind"
+                        details="Um framework de CSS que com as classes pode construir qualquer design"
+                        color='blue.300'
                         colorScheme='teal'
-                        photo={<TagRightIcon as={FaNodeJs} />}
+                        photo={<TagRightIcon as={SiTailwindcss} />}
                         />
                       
                       </HStack>
-                      <Link isExternal  href='https://github.com/juan-20/spotify-clone'
+                      <Link isExternal  href='https://github.com/juan-20/Airbnb-clone'
                       >
                         <Button
                           colorScheme="green"
@@ -121,8 +121,7 @@ function Projects() {
                       >
                         Tinder clone
                       </Heading>
-                      <Text w="full">App mobile, que ao fazer login pela sua conta google, 
-                      pede uma foto para ser de perfile informações básicas que serão exibidas a outros usuarios.
+                      <Text w="full">App mobile, que realiza login usando o login pelo google.
                       Após concluir o cadastro é exibido ao usuario, outros usuarios onde ele pode escolher dar um match ou não.
                       Ao dar um Match aparece uma tela convidando para os dois conversarem, que envia a uma tela de chat onde os dois podem conversar em tempo real.</Text>
 
@@ -149,14 +148,6 @@ function Projects() {
                         colorScheme='yellow'
                         photo={<TagRightIcon as={SiFirebase} />}
                         />
-                        {/* <CustomToolTip
-                        key='Tailwind'
-                        title="Tailwind"
-                        details="Um framework CSSque deixa amis facil a declaração das classes"
-                        color='blue.600'
-                        colorScheme='purple'
-                        photo={<TagRightIcon as={SiTailwindcss} />}
-                        /> */}
                       
                       </HStack>
                       <Link isExternal  href='https://github.com/juan-20/Tinder-clone'

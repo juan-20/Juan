@@ -1,9 +1,9 @@
 import { ChevronDownIcon, ExternalLinkIcon, HamburgerIcon } from '@chakra-ui/icons'
-import { Box, Text, Center, Container, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Heading, IconButton, Input, Link, Menu, MenuButton, MenuItem, MenuList, Spacer, Switch, useDisclosure, Img, AspectRatio, ButtonGroup } from '@chakra-ui/react'
+import { Box, Text, Center, Container, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Heading, IconButton, Input, Link, Menu, MenuButton, MenuItem, MenuList, Spacer, Switch, useDisclosure, Img, AspectRatio, ButtonGroup, Button } from '@chakra-ui/react'
 import type { NextPage } from 'next'
-import { title } from 'process';
 import React, { useContext } from 'react'
 import { ThemeContext } from 'styled-components';
+import {GiBrazilFlag, GiUsaFlag} from 'react-icons/gi'
 
 interface props {
   toggleTheme(): void;
@@ -51,12 +51,36 @@ const Header: NextPage<props> = ({ toggleTheme }) => {
 
             <DrawerBody>
             <Box p='2'>
-                
-                  <p>Mudar o tema:</p>
+                <Flex justifyContent='space-evenly' alignItems='center' p='2' >
+                <p>Mudar o tema:</p>
                 <Switch 
                 size='md' 
                 onChange={toggleTheme} checked={title === 'dark'}
                 />
+                </Flex>
+                <Flex justifyContent='space-evenly' alignItems='center' p='2' >
+                <p>Mudar idioma:</p>
+                <Button>
+                <GiBrazilFlag/>
+                </Button>
+                <Button>
+                <GiUsaFlag/>
+                </Button>
+                </Flex>
+                <Flex justifyContent='center' alignItems='center' p='2' >
+                <Link isExternal  href='https://plausible.io/juancho.vercel.app'
+                      >
+                        <Button
+                          colorScheme="purple"
+                          fontWeight="bold"
+                          size="sm"
+                        >
+                        Analytics  
+                        <ExternalLinkIcon mx='2px' />
+                        </Button>
+                        </Link>
+          
+                </Flex>
                 
                 </Box>
             </DrawerBody>

@@ -1,8 +1,6 @@
 import React, { ReactNode } from "react"
-import { Box, Tag, TagLabel, TagRightIcon, Tooltip } from "@chakra-ui/react"
-import { render } from "react-dom"
-import { FaReact } from "react-icons/fa";
-import { SiFirebase } from "react-icons/si";
+import { Tag, TagLabel, TagRightIcon, Tooltip } from "@chakra-ui/react"
+
 
 type tagProps ={
   title: string,

@@ -1,38 +1,54 @@
-import {
-  Divider,
-  Stack,
-} from '@chakra-ui/react';
-import Projects from '../components/Projects';
-import HeroImage from '../components/Hero-image';
-import HeroText from '../components/Hero-text';
-import Footer from '../components/Footer';
+import { InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
+import { Container } from '../../styles/home';
+import Footer from '../components/Footer';
+import HeroImage from '../components/HeroImage';
+import HeroText from '../components/HeroText';
+import Project from '../components/Project';
+import Social from '../components/Social';
+import { Data } from './api/getData';
 
-const Hero = () => {
+const Hero = ({projects}:  InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
-    <>
+    <Container>
     <Head>
     <title>Juan</title>
     </Head>
-    <Stack
-      as='main'
-    >
-        <Stack
-          as='section'
-          alignItems='center'
-          direction={{ base: 'column-reverse', md: 'row' }}
-          spacing={12}
-        >
-          <HeroText />
+    <main>
+        <section className='hero'>
           <HeroImage />
-        </Stack>
-        <Divider />
-        <Projects />
+          <HeroText />
+          <Social />
+        </section>
+        <div className="divider"></div>
+        {projects.map((e)=> (
+          <Project
+          name={e.name}
+          description={e.description}
+          image={e.image}
+          link={e.link}
+          tech={e.tech}
+          key={e.name}
+          />
+        ))}
 
         <Footer />
-      </Stack> 
-      </>
+      </main> 
+      </Container>
   );
 };
 
 export default Hero;
+
+export const getStaticProps = async () => {
+  
+  const res = await fetch(`${process.env.REACT_APP_ENVIROMENT}/api/getData`)
+   const projects: Data[] = await res.json()
+   return{
+     props:{
+      projects,
+      fallback: false
+     }
+   }
+   
+ }

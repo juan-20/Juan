@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import  me from '../../../public/Iconeanimado-Juan.gif'
 
 export default class MyDocument extends Document {
     render() {

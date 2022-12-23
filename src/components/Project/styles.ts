@@ -1,28 +1,37 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    box-shadow: ${props => props.theme.colors.shadow};
     .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .img{
-            filter: blur(5px);
+            filter: blur(3px);
         }
-        .tech{
-            position: absolute;
-            left: 35%;
-            transform: translate(-50%, -150%);
-            backdrop-filter: blur(800px);
-            z-index: 999;
-            position: absolute;
+        @media only screen and (max-width: 1300px) {
+            justify-content: center;
         }
     }
-    :hover{
-        .image{
-            .tech{
-                svg{
-                    path{
-                fill: ${props => props.theme.colors.secondary};
-                    }
-                }
+    .tech{
+        display: flex;
+        max-width: 500px;
+        overflow: auto;
+        svg{
+        fill: ${props => props.theme.colors.textSecondary};
+        }
+        svg{
+            path{
+        fill: ${props => props.theme.colors.textSecondary};
             }
         }
+    }
+    .bottom{
+        margin: 1rem;
+        display: flex;
+        justify-content: space-between;
     }
 `;

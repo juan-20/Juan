@@ -6,20 +6,31 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: ${props => props.theme.colors.text};
     .where{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: 0.5rem;
         p{
             font-size: 1rem;
+        }
+        svg{
+            background: #009b3a;
+            border-radius: 2px;
+            fill: ${props => props.theme.colors.secondary};
         }
     }
     .Vercel{
         font-weight: bold;
     }
     span{
-        color: #000;
+        color: ${props => props.theme.colors.text};
+    }
+    @media only screen and (min-width: 800px) {
+        flex-direction: row;
+        justify-content: space-between;
     }
 `;

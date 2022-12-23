@@ -12,11 +12,15 @@ export const Container = styled.div`
         padding: 0 1rem 0 1rem;
     }
     .hero{
-    padding-top: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+        padding-top: 2.5rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        @media only screen and (min-width: 1300px) {
+            flex-direction: row;
+        }
+
     }
 
     .divider{

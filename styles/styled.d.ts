@@ -8,14 +8,11 @@ declare module 'styled-components' {
             primary: string,
             secondary: string,
 
+            shadow: string
+
             background: string,
             text: string,
             textSecondary: string,
-
-            boxShadow: string,
-
-            titleDark: string,
-            titleLight: string,
         },
     }
 }

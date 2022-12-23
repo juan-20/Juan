@@ -9,7 +9,7 @@ import {Header} from '../components/Header';
 
 function MyApp ({ Component, pageProps }: AppProps) {
 
-  const [theme, setTheme] = useState(light);
+  const [theme, setTheme] = useState(dark);
 
   const toggleTheme = () => {
     setTheme(theme.title === 'dark' ? light : dark)

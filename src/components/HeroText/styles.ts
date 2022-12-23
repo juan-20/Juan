@@ -20,5 +20,15 @@ export const Container = styled.div`
             padding-bottom: 3rem;
         }
     }
+    @media only screen and (max-width: 600px) {
+        padding: 0rem;
+        padding: 3rem 0 3rem 0;
+        .social-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 
 `;

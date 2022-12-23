@@ -16,9 +16,8 @@ const Hero = ({projects}:  InferGetStaticPropsType<typeof getStaticProps>) => {
     </Head>
     <main>
         <section className='hero'>
-          <HeroImage />
           <HeroText />
-          <Social />
+          <HeroImage />
         </section>
         <div className="divider"></div>
         {projects.map((e)=> (

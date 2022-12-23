@@ -7,29 +7,35 @@ import { Container } from './styles'
 export default function Social() {
   return (
     <Container>
-        <Link href='https://github.com/juan-20'>
+        <Link passHref href='https://github.com/juan-20'>
+         <div className="btn">
            <Button 
            color='black'
            size='base' 
            icon='Github'
            backgroundColor='grey' 
            label='Github' />
+           </div>
         </Link>
-        <Link href='https://github.com/juan-20'>
+        <Link passHref href='https://github.com/juan-20'>
+         <div className="btn">
            <Button 
            color='white'
            size='base' 
            icon='LinkedIn'
            backgroundColor='blue' 
            label='LinkedIn' />
+            </div>
         </Link>
-        <Link href='https://github.com/juan-20'>
+        <Link passHref href='https://github.com/juan-20'>
+         <div className="btn">
            <Button 
            color='white'
            size='base' 
            icon='Instagram'
            backgroundColor='pink' 
            label='Instagram' />
+            </div>
         </Link>
 
         

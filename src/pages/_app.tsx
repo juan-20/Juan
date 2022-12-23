@@ -6,6 +6,7 @@ import GlobalStyles from '../../styles/layout/GlobalStyles';
 import dark from '../../styles/theme/dark';
 import light from '../../styles/theme/light';
 import {Header} from '../components/Header';
+import { Analytics } from '@vercel/analytics/react';
 
 function MyApp ({ Component, pageProps }: AppProps) {
 
@@ -16,7 +17,8 @@ function MyApp ({ Component, pageProps }: AppProps) {
   }
   return (
       <ThemeProvider theme={theme}>
-      <GlobalStyles />
+          <Analytics />
+          <GlobalStyles />
           <Header toggleTheme={toggleTheme}/>
           <Component {...pageProps} />
         </ThemeProvider>

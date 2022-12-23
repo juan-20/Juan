@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.6",
     "next": "^12.1.5",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",

@@ -9,9 +9,9 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        .img{
+        /* .img{
             filter: blur(3px);
-        }
+        } */
         @media only screen and (max-width: 1300px) {
             justify-content: center;
         }

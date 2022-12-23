@@ -20,6 +20,7 @@ export default function Project(props: Data) {
         className='img'
         quality={10}
         src={image[0].url}
+        alt={name+"picture"}
           width={500}
           height={300}
         />

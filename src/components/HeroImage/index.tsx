@@ -11,6 +11,7 @@ export default function HeroImage() {
        width={300}
        height={300}
        layout='intrinsic'
+       alt='Profile Picture'
       />
     </Container>
   )

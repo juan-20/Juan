@@ -17,7 +17,7 @@ export default function Social() {
            label='Github' />
            </div>
         </Link>
-        <Link passHref href='https://github.com/juan-20'>
+        <Link passHref href='https://www.linkedin.com/in/juan-andrade-811017190/'>
          <div className="btn">
            <Button 
            color='white'
@@ -27,7 +27,7 @@ export default function Social() {
            label='LinkedIn' />
             </div>
         </Link>
-        <Link passHref href='https://github.com/juan-20'>
+        <Link passHref href='https://www.instagram.com/juann.jpg/'>
          <div className="btn">
            <Button 
            color='white'

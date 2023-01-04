@@ -17,7 +17,8 @@ type tech={
   'Next' |
   'Tailwind' |
   'React-Native' |
-  'Rest-API'
+  'Rest-API',
+  description: string
 }
 
 type ImageType={
@@ -39,13 +40,16 @@ export default function handler(
       url: 'https://github.com/juan-20/Juan/blob/main/src/assets/projects/airbnb.png?raw=true'
     }],
     tech: [{
-      name: 'Next'
+      name: 'Next',
+      description: 'Next. js is a front-end framework which brings SEO configurations and REST API built-in'
     },
     {
-      name: 'Tailwind'
+      name: 'Tailwind',
+      description: 'A utility-first CSS framework packed with classes, that can be composed to build any design, directly in your markup.'
     },
     {
-      name: 'Rest-API'
+      name: 'Rest-API',
+      description: 'Was created a mock API in Next.js to bring information to the front'
     },
   ]
   },
@@ -57,10 +61,13 @@ export default function handler(
       url: 'https://github.com/juan-20/Juan/blob/main/src/assets/projects/tinder.gif?raw=true'
     }],
     tech: [{
-      name: 'React-Native'
+      name: 'React-Native',
+      description: 'Library to create native apps for Android, iOS, and more using React'
+
     },
     {
-      name: 'Firebase'
+      name: 'Firebase',
+      description: 'Using firebase authentication for fast login and its NoSQL database to store user information'
     },
   ]
   }

@@ -4,6 +4,7 @@ import { Data } from '../../pages/api/getData'
 import { Container } from './styles'
 import Button from '../Button'
 import Link from 'next/link'
+import TechIcon from '../TechIcon'
 
 export default function Project(props: Data) {
   const {name,
@@ -28,10 +29,10 @@ export default function Project(props: Data) {
       <div className="bottom">
       <div className="tech">
         {tech.map((e) => 
-          <Button
+          <TechIcon
           key={e.name}
-          backgroundColor='transparent'
           icon={e.name}
+          description={e.description}
           />
         )}
       </div>

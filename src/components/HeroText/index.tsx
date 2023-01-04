@@ -1,11 +1,19 @@
 import React from 'react'
 import Social from '../Social'
 import { Container } from './styles'
+import Image from 'next/image'
 
 export default function HeroText() {
   return (
     <Container>
-      <h1>Hi, i am Juan</h1>
+      <div className="title">
+        <h1>Featured Front-End Projects</h1>
+        {/* <Image
+        width='64px'
+        height='64px'
+        src={'https://emojipedia-us.s3.amazonaws.com/source/noto-emoji-animations/344/waving-hand_1f44b.gif'}
+        /> */}
+      </div>
       <div className="social-text">
         <p>
           I live in Brazil, I&apos;m 20 years old and I&apos;ve been working as web developer since 2020 <br/>

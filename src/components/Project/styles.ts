@@ -5,6 +5,17 @@ export const Container = styled.div`
     border-radius: 4px;
     margin-top: 1rem;
     box-shadow: ${props => props.theme.colors.shadow};
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div{
+        >svg{
+            fill: #fab105;
+            color: #fab105;
+        }
+    }
+    }
     .image{
         display: flex;
         justify-content: center;

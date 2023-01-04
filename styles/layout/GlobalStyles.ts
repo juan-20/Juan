@@ -34,7 +34,7 @@ export default createGlobalStyle<{theme: ThemeType}>`
         }
 
         h2 {
-        font-size: var(--text-3xl);
+            font-size: var(--text-lg);
         }
 
         h3 {

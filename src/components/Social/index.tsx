@@ -20,7 +20,7 @@ export default function Social() {
         <Link passHref href='https://www.linkedin.com/in/juan-andrade-811017190/'>
          <div className="btn">
            <Button 
-           color='white'
+           color='black'
            size='base' 
            icon='LinkedIn'
            backgroundColor='blue' 
@@ -30,7 +30,7 @@ export default function Social() {
         <Link passHref href='https://www.instagram.com/juann.jpg/'>
          <div className="btn">
            <Button 
-           color='white'
+           color='black'
            size='base' 
            icon='Instagram'
            backgroundColor='pink' 

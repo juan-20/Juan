@@ -2,14 +2,14 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
-    static async getInitialProps(ctx) {
+    static async getInitialProps(ctx: any) {
         const sheet = new ServerStyleSheet()
         const originalRenderPage = ctx.renderPage
     
         try {
           ctx.renderPage = () =>
             originalRenderPage({
-              enhanceApp: (App) => (props) =>
+              enhanceApp: (App: any) => (props: any) =>
                 sheet.collectStyles(<App {...props} />),
             })
     
@@ -20,6 +20,12 @@ export default class MyDocument extends Document {
               <>
                 {initialProps.styles}
                 {sheet.getStyleElement()}
+                   <Html lang='pt'> 
+                 <body>
+                     <Main />
+                     <NextScript />
+                 </body>
+             </Html>
               </>
             ),
           }
@@ -29,20 +35,7 @@ export default class MyDocument extends Document {
       }
     // render() {
     //     return (
-    //         <Html lang='pt'>
-    //             <Head>
-    //                 <meta name='description' content='Juan Pereira Alves Andrade' />
-    //                 <meta name='description' content='Portifolio de Juan' />
-    //                 <meta property='og:title' content='Juan' />
-    //                 <meta property='og:description' content='Portifolio de Juan' />
-    //                 <meta property='og:type' content='website' />
-    //                 <meta property="og:image" content='https://avatars.githubusercontent.com/u/49418565?v=4' />
-    //             </Head>
-    //             <body>
-    //                 <Main />
-    //                 <NextScript />
-    //             </body>
-    //         </Html>
+   
     //     )
     // }
 }

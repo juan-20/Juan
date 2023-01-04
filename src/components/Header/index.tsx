@@ -11,7 +11,7 @@ export function Header({ toggleTheme }: HeaderProps) {
   const { title } = useContext(ThemeContext);
   return (
     <Container>
-      <h5>Juan</h5>
+      <p></p>
       <div onClick={toggleTheme} className="pointer">
                {title === 'light' ? 
                <Sun weight="bold" role="button"  size={32} /> 

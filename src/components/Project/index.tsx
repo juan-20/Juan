@@ -15,13 +15,15 @@ export default function Project(props: Data) {
     isFinished} = props
   return (
     <Container>
-      <h5>{name}</h5>
-      <p>{description}</p>
+      <div className="title">
+      <h2>{name}</h2>
       {isFinished===false ? 
         <TechIcon 
         icon='inProgress'
         description='Not finished' />
         : null}
+        </div>
+      <p>{description}</p>
       <div className="image">
         <Image 
         className='img'

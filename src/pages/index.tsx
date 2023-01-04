@@ -12,13 +12,13 @@ const Hero = ({projects}:  InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <Container>
     <Head>
-    <title>Juan</title>
-    <meta name='description' content='Juan Pereira Alves Andrade' />
-    <meta name='description' content='Portifolio de Juan' />
-    <meta property='og:title' content='Juan' />
-    <meta property='og:description' content='Portifolio de Juan' />
+    <title>Juan&apos;s Portfolio</title>
+    <meta name='description' content='Welcome to my online portfolio! Here you&apos;ll find a selection of my best work. Take a look around and get in touch if you&apos;d like to work together or have any questions' />
+    <meta property='og:title' content='Juan&apos;s Portfolio' />
+    <meta property='og:description' content='Welcome to my online portfolio! Here you&apos;ll find a selection of my best work. Take a look around and get in touch if you&apos;d like to work together or have any questions' />
     <meta property='og:type' content='website' />
     <meta property="og:image" content='https://avatars.githubusercontent.com/u/49418565?v=4' />
+    <link rel="icon" type="image/x-icon" href='https://avatars.githubusercontent.com/u/49418565?v=4'></link>
     </Head>
     <main>
         <section className='hero'>

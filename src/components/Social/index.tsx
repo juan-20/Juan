@@ -30,7 +30,7 @@ export default function Social() {
         <Link passHref href='https://www.instagram.com/juann.jpg/'>
          <div className="btn">
            <Button 
-           color='black'
+           color='white'
            size='base' 
            icon='Instagram'
            backgroundColor='pink' 

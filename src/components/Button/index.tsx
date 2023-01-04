@@ -30,7 +30,7 @@ export default function Button(props : ButtonProps) {
   let bg = ''
   if(backgroundColor === 'grey') bg = '#edf2f7'
   if(backgroundColor === 'blue') bg = '#00a0dc'
-  if(backgroundColor === 'pink') bg = '#d53f8c'
+  if(backgroundColor === 'pink') bg = '#941F5B'
   if(backgroundColor === 'green') bg = '#2F855A'
   if(backgroundColor === 'transparent') bg = 'none'
 

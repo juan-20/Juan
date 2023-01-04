@@ -50,7 +50,7 @@ export default function Project(props: Data) {
             <Button
             icon='Link'
             backgroundColor='green'
-            label='Código-fonte'
+            label='Github'
             />
             </div>
         </Link>

@@ -12,17 +12,17 @@ const Hero = ({projects}:  InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <Container>
     <Head>
-    <title>Juan&apos;s Portfolio</title>
-    <meta name='description' content='Welcome to my online portfolio! Here you&apos;ll find a selection of my best work. Take a look around and get in touch if you&apos;d like to work together or have any questions' />
+    <title>Portfolio do Juan</title>
+    <meta name='description' content='Bem-vindo ao meu portfólio on-line! Aqui você encontrará uma seleção dos meus melhores trabalhos. Dê uma olhada e entre em contato se quiser trabalhar em conjunto ou tiver alguma dúvida' />
     <meta property='og:title' content='Juan&apos;s Portfolio' />
-    <meta property='og:description' content='Welcome to my online portfolio! Here you&apos;ll find a selection of my best work. Take a look around and get in touch if you&apos;d like to work together or have any questions' />
+    <meta property='og:description' content='Bem-vindo ao meu portfólio on-line! Aqui você encontrará uma seleção dos meus melhores trabalhos. Dê uma olhada e entre em contato se quiser trabalhar em conjunto ou tiver alguma dúvida' />
     <meta property='og:type' content='website' />
     <meta property="og:image" content='https://avatars.githubusercontent.com/u/49418565?v=4' />
     <link rel="icon" type="image/x-icon" href='https://avatars.githubusercontent.com/u/49418565?v=4'></link>
     </Head>
     <main>
         <section className='hero'>
-          <HeroText lang='EN' />
+          <HeroText lang='BR' />
           <HeroImage />
         </section>
         <div className="divider"></div>
@@ -48,7 +48,7 @@ export default Hero;
 
 export const getStaticProps = async () => {
   
-  const res = await fetch(`${process.env.REACT_APP_ENVIROMENT}/api/getData`)
+  const res = await fetch(`${process.env.REACT_APP_ENVIROMENT}/api/pegarData`)
    const projects: Data[] = await res.json()
    return{
      props:{

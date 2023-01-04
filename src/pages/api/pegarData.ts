@@ -34,7 +34,7 @@ export default function handler(
   res.status(200).json([
     {
     name: 'Airbnb-clone',
-    description: 'Using Next.js API, a database was created with fictitious information about rooms for rent that are displayed so that you can search for cities and see more information about the room, in addition to being able to search by type of location.',
+    description: 'Utilizando a API do Next.js, foi criado um banco de dados com informações fictícias sobre quartos para alugar que são exibidos para que você possa pesquisar por cidades e ver mais informações sobre o quarto, além de poder pesquisar por tipo de localização.',
     link: 'https://github.com/juan-20/Airbnb-clone',
     isFinished: true,
     image: [{
@@ -42,21 +42,21 @@ export default function handler(
     }],
     tech: [{
       name: 'Next',
-      description: 'Next. js is a front-end framework which brings SEO configurations and REST API built-in'
+      description: 'Next.js é uma estrutura front-end que traz configurações de SEO e API REST integradas'
     },
     {
       name: 'Tailwind',
-      description: 'A utility-first CSS framework packed with classes, that can be composed to build any design, directly in your markup.'
+      description: 'Uma estrutura CSS baseada em utilitários, repleta de classes, que pode ser composta para criar qualquer design, diretamente no HTML.'
     },
     {
       name: 'Rest-API',
-      description: 'Was created a mock API in Next.js to bring information to the front'
+      description: 'Usando um JSON como mock para trazer as informações'
     },
   ]
   },
   {
     name: 'Tinder-clone',
-    description: 'Mobile app, which performs login using login by google. After completing the registration, the user is shown other users where he can choose to match or not. When giving a Match, a screen appears inviting the two to talk, which sends to a chat screen where the two can talk in real time.',
+    description: 'Aplicativo móvel, que realiza o login usando login pelo google. Após concluir o cadastro, o usuário é mostrado a outros usuários onde ele pode optar por combinar ou não. Ao dar um Match, aparece uma tela convidando os dois para conversar, que remete para uma tela de chat onde os dois podem conversar em tempo real.',
     link: 'https://github.com/juan-20/Tinder-clone',
     isFinished: true,
     image: [{
@@ -64,18 +64,18 @@ export default function handler(
     }],
     tech: [{
       name: 'React-Native',
-      description: 'Library to create native apps for Android, iOS, and more using React'
+      description: 'Biblioteca para criar apps nativos para Android, iOS usando React' 
 
     },
     {
       name: 'Firebase',
-      description: 'Using firebase authentication for fast login and its NoSQL database to store user information'
+      description: 'Firebase dá uma solução simples para a utenticação de usuarios e armazenamento de dados em tempo real'
     },
   ]
   },
   {
     name: 'RPG Character Record',
-    description: 'website created to store rpg character sheet. Create your account and have access to your file with all the functionalities anywhere, being able to change it in real time.',
+    description: 'Site criado para armazenar ficha de personagem rpg. Crie a sua conta e tenha acesso ao seu ficheiro com todas as funcionalidades em qualquer lugar, podendo alterá-lo em tempo real.',
     link: 'https://github.com/juan-20/RPG',
     isFinished: false,
     image: [{
@@ -83,18 +83,18 @@ export default function handler(
     }],
     tech: [{
       name: 'Next',
-      description: 'Next. js is a front-end framework which brings SEO configurations and REST API built-in'
+      description: 'Next.js é uma estrutura front-end que traz configurações de SEO e API REST integradas'
 
     },
     {
       name: 'Firebase',
-      description: 'Using firebase authentication for fast login and its NoSQL database to store user information'
+      description: 'Firebase dá uma solução simples para a utenticação de usuarios e armazenamento de dados em tempo real'
     },
   ]
   },
   {
     name: 'Twitter UI Clone',
-    description: 'Twitter Design Clone with multiple breakpoints.',
+    description: 'Clone de Design do twitter com vários breakpoints',
     link: 'https://github.com/juan-20/Twitter-UI-Clone',
     isFinished: true,
     image: [{
@@ -102,7 +102,7 @@ export default function handler(
     }],
     tech: [{
       name: 'React-Native',
-      description: 'A JavaScript library for creating user interfaces'
+      description: 'Uma biblioteca JavaScript para criação de front-end'
 
     },
   ]

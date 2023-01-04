@@ -13,7 +13,6 @@ interface HeaderProps {
 export function Header({ toggleTheme }: HeaderProps) {
   const { title } = useContext(ThemeContext);
   const router = useRouter();
-  console.log(router.pathname)
   return (
     <Container>
       <p></p>

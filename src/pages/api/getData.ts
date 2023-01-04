@@ -34,7 +34,7 @@ export default function handler(
   res.status(200).json([
     {
     name: 'Airbnb-clone',
-    description: 'App que ultiliza a API do Spotify. O usuario ao clicar em login ultiliza sua conta Spotify onde é possível pesquisar por músicas e as reproduzir.',
+    description: 'Using Next.js API, a database was created with fictitious information about rooms for rent that are displayed so that you can search for cities and see more information about the room, in addition to being able to search by type of location.',
     link: 'https://github.com/juan-20/Airbnb-clone',
     image: [{
       url: 'https://github.com/juan-20/Juan/blob/main/src/assets/projects/airbnb.png?raw=true'
@@ -55,7 +55,7 @@ export default function handler(
   },
   {
     name: 'Tinder-clone',
-    description: 'App mobile, que realiza login usando o login pelo google. Após concluir o cadastro é exibido ao usuario, outros usuarios onde ele pode escolher dar um match ou não. Ao dar um Match aparece uma tela convidando para os dois conversarem, que envia a uma tela de chat onde os dois podem conversar em tempo real.',
+    description: 'Mobile app, which performs login using login by google. After completing the registration, the user is shown other users where he can choose to match or not. When giving a Match, a screen appears inviting the two to talk, which sends to a chat screen where the two can talk in real time.',
     link: 'https://github.com/juan-20/Tinder-clone',
     image: [{
       url: 'https://github.com/juan-20/Juan/blob/main/src/assets/projects/tinder.gif?raw=true'

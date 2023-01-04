@@ -1,8 +1,6 @@
 import React from 'react'
 import Social from '../Social'
 import { Container } from './styles'
-import Image from 'next/image'
-
 type LangText={
   lang: 'BR' | 'EN'
 }

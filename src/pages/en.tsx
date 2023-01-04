@@ -1,25 +1,14 @@
 import { InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
 import { Container } from '../../styles/home';
 import Footer from '../components/Footer';
 import HeroImage from '../components/HeroImage';
 import HeroText from '../components/HeroText';
 import Project from '../components/Project';
+import Social from '../components/Social';
 import { Data } from './api/getData';
 
-
 const Hero = ({projects}:  InferGetStaticPropsType<typeof getStaticProps>) => {
-  useEffect(() => {
-    let language = window.navigator.language;
-    let path = window.location.pathname
-  
-  
-    if(language === 'pt-BR' && path === '/'){
-      window.location.href = '/pt'
-    }
-  }),[]
   return (
     <Container>
     <Head>

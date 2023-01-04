@@ -24,4 +24,10 @@ export const Container = styled.nav`
             -webkit-text-fill-color: transparent;
             white-space: nowrap;
         }
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
 `;

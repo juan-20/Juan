@@ -13,16 +13,11 @@ function MyApp ({ Component, pageProps }: AppProps) {
   const [theme, setTheme] = useState(dark);
   useEffect(() => {
     const darkThemeMq: any = window.matchMedia("(prefers-color-scheme: dark)");
-    let language = window.navigator.language;
-    let path = window.location.pathname
 
     if(darkThemeMq.matches){
       setTheme(dark)
     }else{
       setTheme(light)
-    }
-    if(language === 'pt-BR' && path === '/'){
-      window.location.href = '/pt'
     }
   }),[]
   

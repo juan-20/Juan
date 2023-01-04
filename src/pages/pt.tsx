@@ -48,7 +48,7 @@ export default Hero;
 
 export const getStaticProps = async () => {
   
-  const res = await fetch(`${process.env.REACT_APP_ENVIROMENT}/api/pegarData`)
+  const res = await fetch(`${process.env.REACT_APP_ENVIROMENT}/api/getData`)
    const projects: Data[] = await res.json()
    return{
      props:{

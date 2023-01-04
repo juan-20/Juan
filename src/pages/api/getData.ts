@@ -95,7 +95,7 @@ export default function handler(
   {
     name: 'Twitter UI Clone',
     description: 'website created to store rpg character sheet. Create your account and have access to your file with all the functionalities anywhere, being able to change it in real time.',
-    link: 'https://github.com/juan-20/RPG',
+    link: 'https://github.com/juan-20/Twitter-UI-Clone',
     isFinished: true,
     image: [{
       url: 'https://github.com/juan-20/Juan/blob/main/src/assets/projects/twitter.png?raw=true'

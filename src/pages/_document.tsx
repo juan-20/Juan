@@ -9,11 +9,12 @@ export default class MyDocument extends Document {
                     <script defer data-domain="juancho.vercel.app" src="https://plausible.io/js/plausible.js"></script>
 
 
+                    <meta name='description' content='Juan Pereira Alves Andrade' />
                     <meta name='description' content='Portifolio de Juan' />
                     <meta property='og:title' content='Juan' />
                     <meta property='og:description' content='Portifolio de Juan' />
                     <meta property='og:type' content='website' />
-                    <meta property="og:image" content='https://github.com/juan-20/Juan/blob/main/public/Iconeanimado-Juan.gif?raw=true' />
+                    <meta property="og:image" content='https://avatars.githubusercontent.com/u/49418565?v=4' />
                 </Head>
                 <body>
                     <Main />

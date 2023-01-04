@@ -1,5 +1,7 @@
+import { Barricade } from 'phosphor-react'
 import React from 'react'
 import { HiExternalLink } from 'react-icons/hi'
+import { IoMdConstruct } from 'react-icons/io'
 import { Container } from './styles'
 
 interface TechIconProps {
@@ -10,7 +12,7 @@ interface TechIconProps {
     'Next' |
     'Tailwind' |
     'React-Native' |
-    'Rest-API' | 'Link',
+    'Rest-API' | 'Link' | 'inProgress',
     description: string
 }
 
@@ -35,6 +37,9 @@ export default function TechIcon(props: TechIconProps) {
         : null}
         {icon==='Link' ? 
         <HiExternalLink size={24} />
+        : null}
+        {icon==='inProgress' ? 
+          <Barricade size={24} />
         : null}
         <div className="tooltip">
             <div className="tooltip-arrow"></div>

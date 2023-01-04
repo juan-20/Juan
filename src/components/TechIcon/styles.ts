@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   padding: 1rem;
   cursor: pointer;
+  color: ${props => props.theme.colors.text};
+  fill: ${props => props.theme.colors.text};
   :hover{
       .tooltip{
         display: block;

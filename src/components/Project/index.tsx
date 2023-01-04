@@ -11,11 +11,17 @@ export default function Project(props: Data) {
     description,
     link,
     image,
-    tech} = props
+    tech,
+    isFinished} = props
   return (
     <Container>
       <h5>{name}</h5>
       <p>{description}</p>
+      {isFinished===false ? 
+        <TechIcon 
+        icon='inProgress'
+        description='Not finished' />
+        : null}
       <div className="image">
         <Image 
         className='img'

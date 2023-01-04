@@ -28,6 +28,7 @@ const Hero = ({projects}:  InferGetStaticPropsType<typeof getStaticProps>) => {
           link={e.link}
           tech={e.tech}
           key={e.name}
+          isFinished={e.isFinished}
           />
         ))}
 

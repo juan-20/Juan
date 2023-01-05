@@ -10,23 +10,16 @@ import { Analytics } from '@vercel/analytics/react';
 
 
 function MyApp ({ Component, pageProps }: AppProps) {
-  const [system, setSystem] = useState<any>('');
-  let def 
+  const [theme, setTheme] = useState(dark);
   useEffect(() => {
-    const darkThemeMq: any = window.matchMedia("(prefers-color-scheme: dark)");
-    def = darkThemeMq
-    setSystem(darkThemeMq.matches)
+    const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+    if(darkThemeMq.matches){
+      setTheme(dark)
+    }else{
+      setTheme(light)
+    }
   }),[]
-  let SystemTheme
-  
-  if(system === true){
-    SystemTheme = dark
-  }else{
-    SystemTheme = light
-  }
-  console.log(system)
-  console.log(SystemTheme)
-  const [theme, setTheme] = useState(SystemTheme.title === 'dark' ? light : dark);
+ 
   const toggleTheme = () => {
     setTheme(theme.title === 'dark' ? light : dark)
   }

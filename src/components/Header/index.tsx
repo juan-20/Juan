@@ -17,11 +17,11 @@ export function Header({ toggleTheme }: HeaderProps) {
     <Container>
       <p></p>
       <div onClick={toggleTheme} className="pointer flex">
-               {title === 'light' ? 
+               {/* {title === 'light' ? 
                <Sun weight="bold" role="button"  size={32} /> 
                   :
                 <Moon weight="bold" role="button" size={32} />
-              }
+              } */}
                 {router.pathname==='/pt' ?
               <Link href='/en' >
               <Image
